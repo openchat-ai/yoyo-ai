@@ -16,7 +16,7 @@ Ship a fully self-hosted AI code assistant in ~500 KB of binaries, running Qwen2
 
 ## Status
 
-**Week 0 — environment setup** (in progress)
+**Week 0 — environment setup** ✅ complete (2026-06-28)
 
 See [PLAN.md](./PLAN.md) for the full 12-week roadmap.
 
