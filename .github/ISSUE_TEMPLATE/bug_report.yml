@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report a bug in the YOYO AI toolchain
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please include as much detail as possible.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - tokenizer
+        - quantizer
+        - inference
+        - repl
+        - bootstrap / compiler
+        - docs / CI
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: week
+    attributes:
+      label: Plan week (if known)
+      placeholder: e.g. Week 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `yoyo-ai-inference.exe ...`
+        2. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        - OS: Windows 10 x64
+        - CPU: E5-2680 v3
+        - RAM: 32 GB
+        - yoyo.exe SHA256: ...
+    validations:
+      required: false

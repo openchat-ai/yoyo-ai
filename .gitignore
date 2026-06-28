@@ -1,0 +1,20 @@
+# HuggingFace model cache (local only)
+models/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# llama.cpp tools (downloaded locally)
+tools/llama.cpp/
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,44 @@
+name: Feature Request
+description: Suggest an enhancement for YOYO AI
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem does this solve? Link to PLAN.md task if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Week 0–2 (compiler / opcode)
+        - Week 3–4 (tokenizer)
+        - Week 5–6 (inference v1)
+        - Week 7–8 (SIMD / threading)
+        - Week 9 (quantizer / REPL)
+        - Week 10–12 (release)
+        - out of scope for v1.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: Must remain zero external runtime dependencies (.exe only)
+          required: false
+        - label: Must not modify spec.md without explicit approval
+          required: false
