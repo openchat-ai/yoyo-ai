@@ -30,16 +30,17 @@
 
 ---
 
-## Week 0：环境准备
+## Week 0：环境准备 ✅
 
 ### 任务
-- Task 0.1：创建 GitHub repo，初始化 README、issue 模板、CI
-- Task 0.2：跑 baseline benchmark（llama.cpp + Qwen2.5-Coder-3B-Instruct-Q4_K_M.gguf 在 E5 上）
-- Task 0.3：备份当前 yoyo 仓库
+- Task 0.1：创建 GitHub repo，初始化 README、issue 模板、CI ✅
+- Task 0.2：跑 baseline benchmark（llama.cpp + Qwen2.5-Coder-3B-Instruct-Q4_K_M.gguf 在 E5 上）⚠️ 部分完成（Hygon C86-3G 上跑通，9.9 tok/s；E5 待复测）
+- Task 0.3：备份当前 yoyo 仓库 ✅（`F:\yoyo-ide-backup-2026-06-28`，排除 node_modules/.git）
+- Task 0.4：创建 yoyo-ai 子目录结构 ✅
 
 ### 验收
-- baseline-report.md 存在
-- 仓库有完整 README
+- baseline-report.md 存在 ✅
+- 仓库有完整 README ✅
 
 ---
 
